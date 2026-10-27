@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>울산전시장 방문 안내</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#000; --head:#0e0e10; --card:#1f2023; --line:#3a3b40;
+    --text:#fff; --muted:#a8a9ad; --accent:#cfd0d4; --road:#2b2c31; --block:#33353b;
+    --bus:#2f6fe4; --pin:#e0372c; --park:#2e6b3a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:"Noto Sans KR",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:560px;margin:0 auto}
+
+  header{background:var(--head);text-align:center;padding:40px 16px 32px}
+  .logo{height:56px;margin:0 auto 14px;display:block}            /* 공식 로고 이미지를 넣을 자리 */
+  .brand{letter-spacing:.45em;font-size:15px;font-weight:500;color:var(--accent);padding-left:.45em}
+  .bar{width:52px;height:2px;background:var(--accent);margin:12px auto 14px}
+  h1{font-size:38px;font-weight:800;letter-spacing:-.02em}
+  .sub{color:var(--muted);margin-top:6px;font-size:15px}
+
+  main{padding:24px 16px 8px;display:grid;gap:12px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:var(--card);border-left:5px solid var(--accent);border-radius:12px;padding:16px 18px;display:block}
+  .label{color:var(--muted);font-size:13px;font-weight:500}
+  .value{font-size:24px;font-weight:700;margin-top:6px;letter-spacing:-.01em}
+  .call{position:relative}
+  .call .value{display:flex;align-items:center;gap:8px}
+  .call:active{background:#2a2b2f}
+  .tap{font-size:12px;font-weight:500;color:#000;background:var(--accent);border-radius:999px;padding:3px 10px;margin-left:auto;white-space:nowrap}
+
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:12px;font-weight:700;font-size:16px}
+  .btn.primary{background:#fff;color:#000}
+  .btn.ghost{background:var(--card);color:#fff;border:1px solid var(--line)}
+
+  h2{font-size:20px;font-weight:700;margin:16px 0 4px}
+  .map{background:#1a1b1e;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .map svg{display:block;width:100%;height:auto}
+  .caption{text-align:center;font-weight:700;font-size:15px;margin:12px 0 4px}
+
+  footer{margin-top:28px;background:var(--head);text-align:center;color:var(--muted);font-size:14px;padding:22px 16px}
+
+  @media (max-width:380px){ .row{grid-template-columns:1fr} h1{font-size:32px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <!-- 공식 로고 파일이 있으면 아래 주석을 풀고 파일 이름을 맞춰 주세요 -->
+  <!-- <img class="logo" src="logo.png" alt=""> -->
+  <div class="brand">MERCEDES-BENZ</div>
+  <div class="bar"></div>
+  <h1>울산전시장</h1>
+  <p class="sub">전시장 방문 안내</p>
+</header>
+
+<main>
+  <div class="row">
+    <a class="card call" href="tel:0522213421" aria-label="052-221-3421로 전화 걸기">
+      <div class="label">전화번호</div>
+      <div class="value">052-221-3421</div>
+      <span class="tap" style="position:absolute;top:14px;right:14px">누르면 연결</span>
+    </a>
+    <div class="card">
+      <div class="label">운영시간</div>
+      <div class="value">09:00 ~ 20:00</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="label">위치</div>
+    <div class="value">울산 남구 삼산로 83</div>
+  </div>
+
+  <div class="actions">
+    <a class="btn primary" href="tel:0522213421">📞 전화하기</a>
+    <a class="btn ghost" href="https://map.naver.com/p/search/%EC%9A%B8%EC%82%B0%20%EB%82%A8%EA%B5%AC%20%EC%82%BC%EC%82%B0%EB%A1%9C%2083">🗺️ 길찾기</a>
+  </div>
+
+  <h2>약도</h2>
+  <div class="map">
+    <svg viewBox="0 0 680 420" role="img" aria-label="약도: 롯데마트 맞은편, 삼환아르누보 아파트 옆">
+      <style>
+        .b{fill:var(--block)} .t{fill:#fff;font:700 18px "Noto Sans KR",sans-serif;text-anchor:middle}
+        .s{fill:#cfd0d4;font:500 13px "Noto Sans KR",sans-serif;text-anchor:middle}
+        .r{fill:#c9cacd;font:700 15px "Noto Sans KR",sans-serif;text-anchor:middle}
+        .chip{fill:none;stroke:#55575e;stroke-width:1.5}
+      </style>
+      <!-- 도로 -->
+      <rect x="0" y="190" width="680" height="50" fill="var(--road)"/>
+      <line x1="0" y1="215" x2="680" y2="215" stroke="#77797f" stroke-width="2" stroke-dasharray="10 10"/>
+      <rect x="330" y="0" width="22" height="190" fill="var(--road)"/>
+      <rect x="388" y="240" width="44" height="180" fill="var(--road)"/>
+      <line x1="410" y1="245" x2="410" y2="420" stroke="#77797f" stroke-width="2" stroke-dasharray="10 10"/>
+      <text class="r" x="70" y="220">삼산로</text>
+      <text class="r" x="610" y="220">삼산로</text>
+      <text class="s" transform="translate(345 140) rotate(-90)">삼산로83번길</text>
+      <text class="s" transform="translate(415 320) rotate(-90)">삼산로87번길</text>
+
+      <!-- 위쪽 블록 -->
+      <rect class="b" x="24" y="64" width="290" height="106" rx="10"/>
+      <text class="t" x="170" y="104">강남교회</text>
+      <rect class="chip" x="40" y="132" width="100" height="26" rx="13"/><text class="s" x="90" y="150">한솔도시락</text>
+
+      <rect class="b" x="440" y="12" width="216" height="158" rx="10"/>
+      <text class="t" x="548" y="90">삼환아르누보</text><text class="t" x="548" y="114">아파트</text>
+
+      <!-- 전시장 -->
+      <circle cx="396" cy="142" r="54" fill="#2a2b30"/>
+      <rect x="363" y="105" width="66" height="76" rx="8" fill="#e6e6e8"/>
+      <text x="396" y="150" text-anchor="middle" font="800" style="font:800 13px 'Noto Sans KR',sans-serif" fill="#111">전시장</text>
+      <path d="M396 104 c-14-18-20-26-20-36 a20 20 0 0 1 40 0 c0 10-6 18-20 36z" fill="var(--pin)" stroke="#fff" stroke-width="2"/>
+      <circle cx="396" cy="68" r="6" fill="#fff"/>
+      <rect x="276" y="4" width="240" height="44" rx="10" fill="#fff"/>
+      <text x="396" y="25" text-anchor="middle" style="font:800 15px 'Noto Sans KR',sans-serif" fill="#111">울산전시장</text>
+      <text x="396" y="41" text-anchor="middle" style="font:500 11px 'Noto Sans KR',sans-serif" fill="#666">울산 남구 삼산로 83</text>
+
+      <!-- 버스 정류장 -->
+      <g fill="var(--bus)"><rect x="356" y="203" width="24" height="24" rx="6"/><rect x="460" y="203" width="24" height="24" rx="6"/><rect x="398" y="324" width="24" height="24" rx="6"/></g>
+      <g fill="#fff" font-size="13" text-anchor="middle" style="font:700 13px sans-serif"><text x="368" y="220">B</text><text x="472" y="220">B</text><text x="410" y="341">B</text></g>
+
+      <!-- 아래쪽 블록 -->
+      <rect class="b" x="24" y="262" width="350" height="120" rx="10"/>
+      <text class="t" x="199" y="300">롯데마트</text>
+      <rect class="chip" x="90" y="336" width="80" height="26" rx="13"/><text class="s" x="130" y="354">다이소</text>
+      <rect class="chip" x="220" y="336" width="90" height="26" rx="13"/><text class="s" x="265" y="354">써브웨이</text>
+
+      <rect class="b" x="448" y="262" width="208" height="56" rx="10"/>
+      <text class="t" x="552" y="296">삼성스토어</text>
+      <rect class="b" x="448" y="326" width="96" height="36" rx="8"/><text class="s" x="496" y="349">정인민화</text>
+      <rect class="b" x="552" y="326" width="104" height="36" rx="8"/><text class="s" x="604" y="349">미술당 울산점</text>
+      <rect x="448" y="370" width="120" height="34" rx="8" fill="var(--park)"/><text class="s" x="508" y="392" style="fill:#e8f2ea">다문화공원</text>
+    </svg>
+  </div>
+  <p class="caption">롯데마트 맞은편 · 삼환아르누보 아파트 옆</p>
+</main>
+
+<footer>
+  <a href="tel:0522213421">Mercedes-Benz 울산전시장 | 052-221-3421</a>
+</footer>
+
+</div>
+</body>
+</html>
